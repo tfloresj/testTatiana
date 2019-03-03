@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "101",
+      "name": "Manuel Del Pozo",
+      "email": "madepozo@gmail.com",
+      "role": "Web UI Developer",
+      "years": 28
+    },
+    {
+      "name": "Carol Gomez",
+      "email": "cgomez@hotmail,com",
+      "role": "Programador",
+      "years": "25",
+      "id": "BUpjEvB"
+    },
+    {
+      "name": "Diana Gamarra",
+      "email": "dgamarra@hotmail.com",
+      "role": "Analista",
+      "years": "30",
+      "id": "0OMR5Ty"
+    }
+  ]
+}
