@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { User } from 'src/app/users/user.model';
 
 @Component({
-    selector: 'app-usert-form',
+    selector: 'app-user-form',
     templateUrl: './user-form.component.html' 
 })
 export class UserFormComponent implements OnInit {    

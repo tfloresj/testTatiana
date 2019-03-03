@@ -1,7 +1,8 @@
 <div class="users" style="text-align: center;">
     <app-user-list
         [users]="users"        
-        
+        (deleteUser)="deleteUser($event)"
     ></app-user-list>
     
+    <a routerLink="/nuevo-user" class="button">Nuevo Usuario</a>
 </div>

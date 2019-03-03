@@ -10,7 +10,7 @@ import {User} from '../user.model';
 
 export class UserListComponent implements OnInit {
     @Input() users: User[];
-    @Output() deleteProduct: EventEmitter<any> = new EventEmitter<any>();
+    @Output() deleteUser: EventEmitter<any> = new EventEmitter<any>();
     
     constructor(private router:Router) {}
 
@@ -19,12 +19,12 @@ export class UserListComponent implements OnInit {
     
     }
 
-   /* handleDelete(user: User) {
+    handleDelete(user: User) {
         this.deleteUser.emit(user);
     }
 
-    handleUpdate(id:number){
-        this.router.navigate(['productos',id]);
+    handleUpdate(id:string){
+        this.router.navigate(['users',id]);
 
-    }*/
+    }
 }

@@ -1,0 +1,78 @@
+<div class="user-form container" *ngIf="user">
+    
+    <form action=""  #f="ngForm">
+
+        <div class="field">
+            <label class="label" >
+                {{name.invalid && name.touched ?'ingrese un nombre valido':'Nombre:'}}
+            </label>
+            <div class="control">
+                <input 
+                name="name"
+                class="input" 
+                [(ngModel)]="user.name" 
+                type="text" 
+                #name="ngModel"
+                minlength="8"
+                required
+                placeholder="Nombre">
+            </div>
+            {{name.errors | json}}
+        </div>
+        <div class="field">
+            <label class="label">Email
+
+            </label>
+            <div class="control">
+                    <input 
+                    name="email"
+                    class="input" 
+                    [(ngModel)]="user.email" 
+                    type="text" 
+                    #name="ngModel"                    
+                    required
+                    placeholder="Correo">  
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Role
+
+            </label>
+            <div class="control">
+                    <input 
+                    name="role"
+                    class="input" 
+                    [(ngModel)]="user.role" 
+                    type="text" 
+                    #name="ngModel"                    
+                    required
+                    placeholder="Role">  
+            </div>
+        </div>   
+
+        <div class="field">
+            <label class="label">Años
+
+            </label>
+            <div class="control">
+                    <input 
+                    name="years"
+                    class="input" 
+                    [(ngModel)]="user.years" 
+                    type="text" 
+                    #name="ngModel"                    
+                    required
+                    placeholder="Years">  
+            </div>
+        </div>   
+    
+
+        <div class="field">
+            <div class="control">
+                <button class="button is-link" (click)="onSubmit(f)">Guardar</button>
+            </div>
+        </div>
+
+    </form>
+</div>
