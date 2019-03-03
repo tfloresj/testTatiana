@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table is-striped">
+        <thead>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>            
+        </thead>
+        <tbody>
+            <tr *ngFor="let usr of users">
+                <td>{{ usr.id }}</td>
+                <td>{{ usr.name }}</td>
+                <td>
+                    {{usr.email}}
+                </td>                
+                
+                <td>
+                    <button  class="button is-small is-success" (click)="handleUpdate(usr.id)">Actualizar</button>
+                    
+                    <button  class="button is-small is-danger" (click)="handleDelete(usr)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

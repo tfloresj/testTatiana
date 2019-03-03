@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testTatiana": {
+    "angular-test": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/testTatiana",
+            "outputPath": "dist/angular-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "testTatiana:build"
+            "browserTarget": "angular-test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "testTatiana:build:production"
+              "browserTarget": "angular-test:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testTatiana:build"
+            "browserTarget": "angular-test:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "testTatiana-e2e": {
+    "angular-test-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "testTatiana:serve"
+            "devServerTarget": "angular-test:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "testTatiana:serve:production"
+              "devServerTarget": "angular-test:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "testTatiana"
+  "defaultProject": "angular-test"
 }
